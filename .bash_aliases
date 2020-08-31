@@ -25,10 +25,10 @@ alias v='vim'
 alias sv='sudo vim'
 
 # Rust aliases
-alias cn = 'cargo new'
-alias cb = 'cargo build'
-alias cbr = 'cargo build --release'
-alias cr = 'cargo run'
+alias cn='cargo new'
+alias cb='cargo build'
+alias cbr='cargo build --release'
+alias cr='cargo run'
 
 # Git/Github aliases
 alias ga='git add'
