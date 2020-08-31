@@ -8,6 +8,7 @@
 
 # Alias - Make Terminal Great Again!
 # ------------------------------------------------------------------------
+
 alias cp='cp -iv'   # Write Prompt to the standard error output & verbose
 alias mv='mv -iv'   # Write Prompt to the standard error output & verbose
 alias mkdir='mkdir -pv' # Create intermediate dir as required & verbose
@@ -22,12 +23,22 @@ alias ~="cd ~"
 alias c='clear'
 alias v='vim'
 alias sv='sudo vim'
+
+# Rust aliases
+alias cn = 'cargo new'
+alias cb = 'cargo build'
+alias cbr = 'cargo build --release'
+alias cr = 'cargo run'
+
+# Git/Github aliases
 alias ga='git add'
 alias gp='git push'
 alias gc='git commit -am'
 alias gcb='git checkout -b'
 alias gco='git checkout'
 alias gst='git status'
+
+# youtube-dl aliases
 alias yt='youtube-dl -o "%(uploader)s-%(title)s.%(ext)s" -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" --add-metadata -icv'    # Download video link
 alias yta='youtube-dl -o "%(uploader)s-%(title)s.%(ext)s" -xic -f bestaudio/best --add-metadata'  # Download only audio
 
