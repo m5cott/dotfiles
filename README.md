@@ -35,7 +35,8 @@ ln -s ~/dev/github/dotfiles/.vimrc ~/
 ```
 ### .vim/colors
 ```
-ln -s ~/dev/github/.vim/colors/* ~/
+mkdir -pv ~/.vim/colors
+rsync -av /home/michael/dev/github/dotfiles/.vim/colors/ /home/michael/.vim/colors/
 ```
 ### .bash_profile
 ```
