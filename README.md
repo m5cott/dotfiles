@@ -33,6 +33,10 @@ ln -s ~/dev/github/dotfiles/.profile ~/
 ```
 ln -s ~/dev/github/dotfiles/.vimrc ~/
 ```
+### .vim/colors
+```
+ln -s ~/dev/github/.vim/colors/* ~/
+```
 ### .bash_profile
 ```
 ln -s ~/dev/github/dotfiles/.bash_profile ~/
