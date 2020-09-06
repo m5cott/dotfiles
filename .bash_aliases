@@ -24,6 +24,9 @@ alias c='clear'
 alias v='vim'
 alias sv='sudo vim'
 
+# Python aliases
+alias python='python3'
+
 # Rust aliases
 alias cn='cargo new'
 alias cb='cargo build'
@@ -39,8 +42,9 @@ alias gco='git checkout'
 alias gst='git status'
 
 # youtube-dl aliases
-alias yt='youtube-dl -o "%(uploader)s-%(title)s.%(ext)s" -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" --add-metadata -icv'    # Download video link
-alias yta='youtube-dl -o "%(uploader)s-%(title)s.%(ext)s" -xic -f bestaudio/best --add-metadata'  # Download only audio
+# Making youtube-dl use python3 instead of python2
+alias yt='python3 /usr/local/bin/youtube-dl -o "%(uploader)s-%(title)s.%(ext)s" -f "bestvideo[ext=mp4]+bestaudio[ext=m4a]/mp4" --add-metadata -icv'    # Download video link
+alias yta='python3 /usr/local/bin/youtube-dl -o "%(uploader)s-%(title)s.%(ext)s" -xic -f bestaudio/best --add-metadata'  # Download only audio
 
 #   extract:  Extract most know archives with one command
 #   ---------------------------------------------------------
