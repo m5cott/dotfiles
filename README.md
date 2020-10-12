@@ -22,8 +22,13 @@ git clone git@github.com:m5cott/dotfiles.git
 ln -s ~/dev/github/dotfiles/.bashrc ~/
 ```
 ### .bash_aliases
+For Linux
 ```
 ln -s ~/dev/github/dotfiles/.bash_aliases ~/
+```
+For Windows
+```
+ln -s /mnt/c/Users/mcsco/Projects/github/m5cott/dotfiles/.bash_aliases ~/
 ```
 ### .profile
 ```
