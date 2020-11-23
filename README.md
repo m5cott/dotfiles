@@ -1,49 +1,29 @@
-# dotfiles
-My dotfiles
+# A Pleb's dotfiles
 
-## About
-A small repo of dotfiles that I use. It is a work in progress.
+These are some of the dotfiles that I deploy on my linux/unix systems. The files are a W.I.P.
 
-## dotfiles that can be found here
-+ .bashrc
-+ .bash_aliases
-+ .profile
-+ .vimrc
-+ .bash_profile (macOS)
++ dotfiles/files that can be found here:
+    + .profile
+    + .zprofile
+    + git/config
+    + mpv/input.conf
+    + newsboat/config
+    + nvim/init.vim
+    + shell/aliasrc
+    + wget/wgetrc
+    + zathura/zathurarc
+    + zsh/.zshrc
+    + and many more to come...
+
+## Usage
+
+These files are intended to be used on Ubuntu based systems. They have only been tested on Ubuntu.
+Please be advised.
 
 ## Installation
-### Clone Repo
-```
-git clone git@github.com:m5cott/dotfiles.git
-```
 
-### .bashrc
+The autoinstall script can be found at github.com/m5cott/yeet
+
 ```
-ln -s ~/dev/github/dotfiles/.bashrc ~/
-```
-### .bash_aliases
-For Linux
-```
-ln -s ~/dev/github/dotfiles/.bash_aliases ~/
-```
-For Windows
-```
-ln -s /mnt/c/Users/mcsco/Projects/github/m5cott/dotfiles/.bash_aliases ~/
-```
-### .profile
-```
-ln -s ~/dev/github/dotfiles/.profile ~/
-```
-### .vimrc
-```
-ln -s ~/dev/github/dotfiles/.vimrc ~/
-```
-### .vim/colors
-```
-mkdir -pv ~/.vim/colors
-rsync -av /home/michael/dev/github/dotfiles/.vim/colors/ /home/michael/.vim/colors/
-```
-### .bash_profile
-```
-ln -s ~/dev/github/dotfiles/.bash_profile ~/
+curl -LO https://raw.githubusercontent.com/m5cott/yeet/master/yeet.sh
 ```

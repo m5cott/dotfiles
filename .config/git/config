@@ -1,0 +1,7 @@
+[user]
+	name = m5cott
+	email = mcscottbsn@outlook.com
+[color]
+	ui = true
+[core]
+	editor = vim
