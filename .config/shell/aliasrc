@@ -44,6 +44,7 @@ alias \
 	v="$EDITOR" \
     vim="$EDITOR" \
 	p="sudo pacman" \
+    python="python3" \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
 	xq="xbps-query" \
