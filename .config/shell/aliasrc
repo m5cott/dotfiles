@@ -43,7 +43,8 @@ alias \
 	e="$EDITOR" \
 	v="$EDITOR" \
     vim="$EDITOR" \
-	p="sudo pacman" \
+	sup="sudo apt update" \
+    sug="sudo apt upgrade" \
     python="python3" \
 	xi="sudo xbps-install" \
 	xr="sudo xbps-remove -R" \
