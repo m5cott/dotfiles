@@ -1,6 +1,6 @@
 """"""""""""""""""""""""""""""""""""""""""""""""""
 " Name: init.vim
-" Directory: /home/$USER/.config/nvim/init.vim    
+" Directory: /home/$USER/.config/nvim/init.vim
 " Purpose: personalized neovim
 " Author: Michael Scott (m5cott)
 " Created: 2020-11-23
@@ -9,7 +9,6 @@
 
 " Setting Custom Key Mapping
 let mapleader =","
-
 
 if ! filereadable(system('echo -n "${XDG_CONFIG_HOME:-$HOME/.config}/nvim/autoload/plug.vim"'))
 	echo "Downloading junegunn/vim-plug to manage plugins..."
