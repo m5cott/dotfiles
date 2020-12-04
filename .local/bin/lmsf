@@ -1,0 +1,8 @@
+#!/bin/sh
+#
+# Simple Script for setting Scaling Factor to 200% for Linux Mint
+# This script is used for qemu on a 4K display
+
+LM=`lsb_release -is`
+
+[ $LM = "Linuxmint" ] && gsettings set org.cinnamon.desktop.interface scaling-factor 2
