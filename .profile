@@ -22,6 +22,7 @@ export XDG_CACHE_HOME="$HOME/.cache"
 export LESSHISTFILE="-"
 export ZDOTDIR="${XDG_CONFIG_HOME:-$HOME/.config}/zsh"
 export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
+export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
 
 # This is the list for lf icons:
 export LF_ICONS="di=📁:\
