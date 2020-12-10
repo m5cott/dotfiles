@@ -36,7 +36,6 @@ alias \
 # These common commands are just too long! Abbreviate them.
 alias \
 	ka="killall" \
-	trem="transmission-remote" \
 	YT="youtube-viewer" \
 	sdn="sudo shutdown -h now" \
 	f="$FILE" \
@@ -46,9 +45,6 @@ alias \
 	sup="sudo apt update" \
     sug="sudo apt upgrade" \
     python="python3" \
-	xi="sudo xbps-install" \
-	xr="sudo xbps-remove -R" \
-	xq="xbps-query" \
 	z="zathura"
 
 # Git commands
