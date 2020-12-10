@@ -1,0 +1,67 @@
+#!/bin/sh
+
+# directories
+gdir="$HOME/proj/git/plebrice"
+ldir="$HOME"
+
+# files
+aliasf=".config/shell/aliasrc"
+profilef=".profile"
+zshf=".config/zsh/.zshrc"
+nvimf=".config/nvim/init.vim"
+
+read -p "Do you want to update the dotfiles? (y/N) " run
+
+sync () {
+    echo "Checking file..."
+
+    # aliasrc
+    echo "... aliasrc"
+    diff -s $gdir/$aliasf $ldir/$aliasf >/dev/null
+    if [ $? -ne 0 ]; then
+        echo "Syncing aliasrc"
+        cp $gdir/$aliasf $ldir/$aliasf
+    else
+        echo "The files are the same. No syncing required."
+    fi
+
+    # profile
+    echo "... .profile"
+    diff -s $gdir/$profilef $ldir/$profilef >/dev/null
+    if [ $? -ne 0 ]; then
+        echo "Syncing .profile"
+        cp $gdir/$profilef $ldir/$profilef
+    else
+        echo "The files are the same. No syncing required."
+    fi
+
+    # zshrc
+    echo "... .zshrc"
+    diff -s $gdir/$zshf $ldir/$zshf >/dev/null
+    if [ $? -ne 0 ]; then
+        echo "Syncing .zshrc"
+        cp $gdir/$zshf $ldir/$zshf
+    else
+        echo "The files are the same. No syncing required."
+    fi
+
+    # neovim
+    echo "... neovim"
+    diff -s $gdir/$nvimf $ldir/$nvimf >/dev/null
+    if [ $? -ne 0 ]; then
+        echo "Syncing neovim's init.vim"
+        cp $gdir/$nvimf $ldir/$nvimf
+    else
+        echo "The files are the same. No syncing required."
+    fi
+}
+
+case $run in
+    "y")
+        sync ;;
+    "Y")
+        sync ;;
+    *)
+        echo "Exiting script."
+        exit ;;
+esac
