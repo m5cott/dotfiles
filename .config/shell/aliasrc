@@ -38,6 +38,7 @@ alias \
 	ka="killall" \
 	YT="youtube-viewer" \
 	sdn="sudo shutdown -h now" \
+    rbn="sudo reboot" \
 	f="$FILE" \
 	e="$EDITOR" \
 	v="$EDITOR" \
@@ -45,7 +46,8 @@ alias \
 	sup="sudo apt update" \
     sug="sudo apt upgrade" \
     python="python3" \
-	z="zathura"
+	z="zathura" \
+    shred="shred -zuvn 5"
 
 # Git commands
 alias \
