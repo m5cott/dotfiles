@@ -1,0 +1,24 @@
+#!/bin/sh
+
+# files
+af="aliasrc"
+nf="nvim"
+pf="profile"
+zf="zshrc"
+
+# directories
+gd="$HOME/proj/git/plebrice"
+ld="$HOME"
+
+case $1 in
+    $af)
+        echo "Updating $af..." && cp $gd/.config/shell/$af $ld/.config/shell/$af ;;
+    $nf)
+        echo "Updating $nf..." && cp $gd/.config/$nf/init.vim $ld/.config/$nf/init.vim ;;
+    $pf)
+        echo "Updating $pf..." && cp $gd/$pf $ldir/$pf ;;
+    $zf)
+        echo "Updating $zf..." && cp $gd/.config/zsh/.$zf $ld/.config/zsh/.$zf ;;
+    *)
+        echo "Invalid input" ;;
+esac
