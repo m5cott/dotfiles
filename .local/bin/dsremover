@@ -1,0 +1,4 @@
+#!/bin/sh
+
+find $1 -name .DS_Store -exec rm -v {} \;
+find $1 -name ._.DS_Store -exec rm -v {} \;
