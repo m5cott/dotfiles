@@ -22,6 +22,11 @@ HISTFILE=$HOME/.cache/zsh/history
 # Do not show covered up line
 unsetopt PROMPT_SP
 
+# load .profile for debian. for some reason debian doesn't like to load .profile
+if [ `lsb_release -is` = "Debian" ]; then
+    source $HOME/.profile
+fi
+
 # Load aliases and shortcuts if existent.
 #[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc"
 source $HOME/.config/shell/aliasrc
