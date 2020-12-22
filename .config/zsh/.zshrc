@@ -27,10 +27,8 @@ if [ `lsb_release -is` = "Debian" ]; then
     source $HOME/.profile
 fi
 
-# Load aliases and shortcuts if existent.
-#[ -f "${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc" ] && source "${XDG_CONFIG_HOME:-$HOME/.config}/shortcutrc"
+# Load aliases and shortcuts
 source $HOME/.config/shell/aliasrc
-source "${XDG_CONFIG_HOME:-$HOME/.config}/shell/directoryrc"
 
 # Basic auto/tab complete:
 autoload -U compinit
