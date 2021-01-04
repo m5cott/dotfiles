@@ -59,6 +59,23 @@ alias \
  	gcb="git checkout -b" \
  	gco="git checkout" \
 	gst="git status"
+	
+# Directory Shortcuts
+alias \
+    cac=${XDG_CACHE_HOME:-$HOME/.cache} \
+    cf=${XDG_CONFIG_HOME:-$HOME/.config} \
+    D=${XDG_DOWNLOAD_DIR:-$HOME/Downloads} \
+    d=${XDG_DOCUMENTS_DIR:-$HOME/Documents} \
+    dt=${XDG_DATA_HOME:-$HOME/.local/share} \
+    h=$HOME \
+    m=${XDG_MUSIC_DIR:-$HOME/Music} \
+    mn=/mnt \
+    p=${XDG_PICTURES_DIR:-$HOME/Pictures} \
+    pp=$HOME/Projects \
+    pg=$HOME/Projects/github \
+    sc=$HOME/.local/bin \
+    src=$HOME/.local/src \
+    vv=${XDG_VIDEOS_DIR:-$HOME/Videos}
 
 # Ubuntu commands
 alias \
